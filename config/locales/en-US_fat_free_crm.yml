@@ -173,7 +173,7 @@ en-US:
   msg_asset_rejected: "%{value} has been rejected."
   msg_bad_image_file: "^Could't upload or resize the image file you specified."
   msg_cant_create_related: "Can't create the %{asset} since the %{related} is no longer available."
-  msg_cant_delete_user: "Couldn't delete the user since %{value} has related assets present."
+  msg_cant_delete_user: "^Couldn't delete the user since %{value} has related assets present."
   msg_cant_do: "Can't %{action} the %{asset} since it's no longer available."
   msg_email_not_found: No user was found with that email address.
   msg_enter_new_password: Please enter your new password.
@@ -282,15 +282,15 @@ en-US:
   date_created: Date Created
   date_updated: Date Updated
   fax: Fax
-  pipeline: Pipeline
   intro: You can add %{value} information later.
+  keep_private: Keep it private, do not share with others
+  mail_to: Mail to %{value}
+  make_public: Share it with everyone
   mobile_small: mobile
   open_in_window: Open %{value} in a new window
-  mail_to: Mail to %{value}
   phone_small: phone
   phone_toll_free: Toll-free
-  keep_private: Keep it private, do not share with others
-  make_public: Share it with everyone
+  pipeline: Pipeline
   same_as_billing: same as billing
   save_account: Save Account
   share_with: Share it with the following people
