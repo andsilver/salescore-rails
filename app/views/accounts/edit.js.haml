@@ -6,7 +6,7 @@
 
   - if called_from_landing_page?
     crm.flip_form('edit_#{entity_name}');
-    crm.set_title('edit_#{entity_name}', '#{@entity.name}');
+    crm.set_title('edit_#{entity_name}', '#{h @entity.name}');
   - else                                            # Called from index page...
     jQuery('##{id}').replaceWith('#{ j render(:partial => entity_name, :collection => [ @entity ]) }');
 
@@ -28,5 +28,5 @@
   - elsif params[:cancel].false?                    # Called from title of the landing page...
     jQuery('#edit_#{entity_name}').html('#{ j render(:partial => "edit") }');
     crm.flip_form('edit_#{entity_name}');
-    crm.set_title('edit_#{entity_name}', "#{t :edit} #{@entity.name}");
+    crm.set_title('edit_#{entity_name}', "#{t :edit} #{h @entity.name}");
   jQuery('#new_#{entity_name} input[type!=hidden]').first().focus();
