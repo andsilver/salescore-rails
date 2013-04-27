@@ -18,6 +18,6 @@
 
 - else
   jQuery('##{create_id}').html('#{ j render(:partial => "new") }');
-  crm.create_or_select_account('#{ request.referer =~ /\/accounts\// || @account.id.blank? }');
+  crm.create_or_select_account(#{ request.referer =~ /\/accounts\// || @account.id.blank? });
   jQuery('##{create_id}').effect("shake", { duration:250, distance: 6 });
   jQuery('#new_#{entity_name} input[type!=hidden]').first().focus();
